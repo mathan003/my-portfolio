@@ -1,6 +1,6 @@
 /**
  * Mathan M Portfolio — Modern JavaScript (ES6+)
- * 100% Vanilla JS • Zero External Dependencies • Pure Client-Side
+ * 100% JavaScript • Zero External Dependencies • Pure Client-Side
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'Frontend & UI Showcase',
       tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'CSS Grid'],
       description:
-        'A comprehensive automotive showroom and discovery portal built with pure semantic HTML5, modern CSS3 layouts, and dynamic vanilla JS filtering. Designed with a sleek, premium automotive aesthetic.',
+        'A comprehensive automotive showroom and discovery portal built with pure semantic HTML5, modern CSS3 layouts, and dynamic JavaScript filtering. Designed with a sleek, premium automotive aesthetic.',
       features: [
         'Vehicle model comparison & detail preview modal',
         'Multi-attribute search and category filters (Sedan, SUV, Luxury)',
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menswear: {
       title: 'Men’s Wear E-Commerce',
       category: 'Storefront & UX',
-      tech: ['HTML5', 'CSS3', 'Vanilla JS', 'Local Storage', 'Flexbox'],
+      tech: ['HTML5', 'CSS3', 'JavaScript', 'Local Storage', 'Flexbox'],
       description:
         'A modern apparel shopping experience tailored for digital fashion retail. Features smooth catalog navigation, quick item previews, size selections, and client-side bag state.',
       features: [

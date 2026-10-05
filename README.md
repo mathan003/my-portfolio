@@ -1,6 +1,6 @@
 # Mathan M — Personal Portfolio
 
-A modern, high-performance, responsive developer portfolio built purely with **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)**. 
+A modern, high-performance, responsive developer portfolio built purely with **HTML5**, **CSS3**, and **JavaScript (ES6+)**. 
 
 **100% Client-Side • Zero Backend Code Required • Direct WhatsApp Integration**
 
@@ -13,7 +13,7 @@ A modern, high-performance, responsive developer portfolio built purely with **H
 - **Direct WhatsApp Messaging**: 
   - Submitting the contact form formats visitor details into a clean WhatsApp message and opens WhatsApp chat with Mathan (**+91 93840 98304**).
   - Floating WhatsApp quick-chat button for fast messaging from anywhere on the page.
-- **Client-Side Form Validation**: Pure vanilla JavaScript validation for name, email format, phone, service selection, and message length with clear inline error indicators.
+- **Client-Side Form Validation**: Pure JavaScript validation for name, email format, phone, service selection, and message length with clear inline error indicators.
 - **Local Storage Inquiry Backup**: Captures submissions client-side for offline reliability.
 - **Interactive Project Showcase**: Filter projects by category with interactive preview modal dialogs.
 - **Animated Skill Meters**: Dynamic counter animations on scroll using Intersection Observer API.
@@ -29,12 +29,10 @@ My-Portfolio/
 ├── css/
 │   └── style.css         # Modern CSS3 stylesheet (dark/light mode, animations, layout)
 ├── js/
-│   └── main.js           # Vanilla ES6+ JavaScript (WhatsApp submission, themes, UI interactions)
+│   └── main.js           # JavaScript ES6+ (WhatsApp submission, themes, UI interactions)
 ├── images/
 │   ├── 1718.png          # Developer profile portrait
 │   └── favicon.svg       # Brand icon
-├── docs/
-│   └── Portfolio_Guide.pdf
 └── README.md             # Project documentation
 ```
 
