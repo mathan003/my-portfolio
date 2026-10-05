@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Mathan M is a web developer focused on modern, accessible, and high-performance HTML5, CSS3, and JavaScript digital experiences." />
+    <meta name="keywords" content="Mathan M, Web Developer, Frontend Developer, HTML5, CSS3, JavaScript, UI UX, Responsive Web Design, Madurai" />
+    <meta name="author" content="Mathan M" />
+    <meta name="theme-color" content="#1f5a3d" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mathan M | Web Developer" />
+    <meta property="og:description" content="Building modern, responsive digital experiences with HTML5, CSS3, and JavaScript." />
+    <meta property="og:image" content="images/1718.png" />
+
+    <title>Mathan M | Web Developer — HTML5, CSS3 &amp; JavaScript</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Pure CSS3 Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#home" class="skip-link">Skip to main content</a>
+
+    <!-- Header Navigation -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Mathan M homepage">
+          <span class="brand-badge">M</span>
+          <span class="brand-text">Mathan</span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#journey" class="nav-link">Journey</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <span class="icon-sun" aria-hidden="true">☀️</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+
+          <!-- Hire Me CTA -->
+          <a class="btn btn-small" href="#contact">Hire Me</a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero section container" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Available for new opportunities
+          </p>
+          <h1>
+            I’m <span>Mathan M</span>,<br />
+            a Web Developer<br />
+            building digital experiences.
+          </h1>
+          <p class="lead">
+            I design and develop clean, responsive websites and modern front-end experiences using semantic HTML5,
+            CSS3, and JavaScript with a strong focus on usability, accessibility, and performance.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#projects">
+              <span>View Projects</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="outline" href="#contact">Book a Call</a>
+          </div>
+          <ul class="hero-meta" aria-label="Key highlights">
+            <li>
+              <strong>4+</strong>
+              <span>Years learning</span>
+            </li>
+            <li>
+              <strong>10+</strong>
+              <span>Projects built</span>
+            </li>
+            <li>
+              <strong>100%</strong>
+              <span>Frontend focus</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Mathan M web developer profile display">
+          <div class="orbit-ring" aria-hidden="true"></div>
+          <div class="code-badge" aria-hidden="true">
+            <span class="code-sym">&lt;/&gt;</span>
+            <span class="code-text">Frontend</span>
+          </div>
+          <div class="shape shape-one" aria-hidden="true"></div>
+          <div class="shape shape-two" aria-hidden="true"></div>
+          <img class="profile-portrait" src="images/1718.png" alt="Mathan M - Web Developer portrait" width="380" height="460" loading="eager" />
+          <div class="floating-tag tag-one" aria-hidden="true">HTML5 • CSS3</div>
+          <div class="floating-tag tag-two" aria-hidden="true">✦ JavaScript ✦</div>
+        </div>
+      </section>
+
+      <!-- Infinite Skills Marquee Ticker -->
+      <section class="ticker-wrapper" aria-label="Technologies and competencies ticker">
+        <div class="ticker" id="ticker">
+          <div class="ticker-track">
+            <span>HTML5</span><span class="ticker-dot">✦</span>
+            <span>CSS3</span><span class="ticker-dot">✦</span>
+            <span>JavaScript ES6+</span><span class="ticker-dot">✦</span>
+            <span>Responsive Web Design</span><span class="ticker-dot">✦</span>
+            <span>UI/UX Architecture</span><span class="ticker-dot">✦</span>
+            <span>Web Accessibility (a11y)</span><span class="ticker-dot">✦</span>
+            <span>CSS Flexbox &amp; Grid</span><span class="ticker-dot">✦</span>
+            <span>DOM Manipulation</span><span class="ticker-dot">✦</span>
+            <span>Performance Optimization</span><span class="ticker-dot">✦</span>
+            <!-- Duplicate for seamless looping -->
+            <span>HTML5</span><span class="ticker-dot">✦</span>
+            <span>CSS3</span><span class="ticker-dot">✦</span>
+            <span>JavaScript ES6+</span><span class="ticker-dot">✦</span>
+            <span>Responsive Web Design</span><span class="ticker-dot">✦</span>
+            <span>UI/UX Architecture</span><span class="ticker-dot">✦</span>
+            <span>Web Accessibility (a11y)</span><span class="ticker-dot">✦</span>
+            <span>CSS Flexbox &amp; Grid</span><span class="ticker-dot">✦</span>
+            <span>DOM Manipulation</span><span class="ticker-dot">✦</span>
+            <span>Performance Optimization</span><span class="ticker-dot">✦</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section container" id="services">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Services</p>
+          <div class="heading-row">
+            <h2>What I can <span>build</span></h2>
+            <a href="#contact" class="pill">Start a project &rarr;</a>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="service-card featured reveal">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Web Design</h3>
+            <p>Modern, conversion-focused landing pages and marketing websites designed with a clean visual system, engaging typography, and intuitive hierarchy.</p>
+            <ul class="service-bullets">
+              <li>Custom Wireframing &amp; Layouts</li>
+              <li>Brand Identity Consistency</li>
+              <li>Conversion-Centered Design</li>
+            </ul>
+            <a href="#contact" class="service-link">Discuss Web Design &rarr;</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">⚙</div>
+            <h3>UI Development</h3>
+            <p>Clean front-end implementation using semantic HTML5 markup, maintainable CSS3 styling, and fast vanilla JavaScript interactions.</p>
+            <ul class="service-bullets">
+              <li>Semantic HTML5 Document Structure</li>
+              <li>Modular CSS &amp; Modern Flexbox/Grid</li>
+              <li>Vanilla JS Interactive Features</li>
+            </ul>
+            <a href="#contact" class="service-link">Discuss UI Development &rarr;</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">⌘</div>
+            <h3>Responsive UX</h3>
+            <p>Cross-device experiences fine-tuned for phones, tablets, and large desktop screens with seamless layouts, touch controls, and speed.</p>
+            <ul class="service-bullets">
+              <li>Mobile-First Architecture</li>
+              <li>Cross-Browser Compatibility</li>
+              <li>Smooth Micro-Interactions</li>
+            </ul>
+            <a href="#contact" class="service-link">Discuss Responsive UX &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section container" id="skills">
+        <div class="section-heading reveal center-block">
+          <p class="eyebrow">Tools I enjoy</p>
+          <h2>Core <span>skills</span> behind my work</h2>
+          <p class="section-subtext">Specialized in modern front-end fundamentals with 100% pure client-side code.</p>
+        </div>
+
+        <div class="skill-grid" id="skill-grid">
+          <div class="skill reveal" data-target="95">
+            <div class="meter" style="--p: 0" aria-label="HTML5: 95%">
+              <span class="meter-num">0%</span>
+            </div>
+            <strong>HTML5</strong>
+            <small>Semantic &amp; Accessible</small>
+          </div>
+
+          <div class="skill reveal" data-target="92">
+            <div class="meter" style="--p: 0" aria-label="CSS3: 92%">
+              <span class="meter-num">0%</span>
+            </div>
+            <strong>CSS3</strong>
+            <small>Flexbox, Grid &amp; Animations</small>
+          </div>
+
+          <div class="skill reveal" data-target="88">
+            <div class="meter" style="--p: 0" aria-label="JavaScript: 88%">
+              <span class="meter-num">0%</span>
+            </div>
+            <strong>JavaScript</strong>
+            <small>ES6+, DOM &amp; Async</small>
+          </div>
+
+          <div class="skill reveal" data-target="86">
+            <div class="meter" style="--p: 0" aria-label="UI/UX: 86%">
+              <span class="meter-num">0%</span>
+            </div>
+            <strong>UI/UX Design</strong>
+            <small>Usability &amp; Wireframing</small>
+          </div>
+
+          <div class="skill reveal" data-target="90">
+            <div class="meter" style="--p: 0" aria-label="Responsive Design: 90%">
+              <span class="meter-num">0%</span>
+            </div>
+            <strong>Responsive Design</strong>
+            <small>Mobile-First Layouts</small>
+          </div>
+        </div>
+
+        <!-- Tech Stack Tags -->
+        <div class="tech-pills reveal">
+          <span class="tech-pill">Semantic HTML5</span>
+          <span class="tech-pill">CSS Custom Properties</span>
+          <span class="tech-pill">CSS Keyframe Animations</span>
+          <span class="tech-pill">Vanilla JavaScript (ES6+)</span>
+          <span class="tech-pill">Intersection Observer API</span>
+          <span class="tech-pill">Local Storage API</span>
+          <span class="tech-pill">Web Accessibility (WCAG)</span>
+          <span class="tech-pill">Cross-Browser Testing</span>
+        </div>
+      </section>
+
+      <!-- Selected Projects Section -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Portfolio</p>
+            <div class="heading-row">
+              <h2>Selected <span>projects</span></h2>
+              <!-- Project Category Filter -->
+              <div class="project-filters" role="tablist" aria-label="Filter projects">
+                <button class="filter-btn active" type="button" data-filter="all">All</button>
+                <button class="filter-btn" type="button" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" type="button" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" type="button" data-filter="dashboard">Dashboard</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-grid" id="project-grid">
+            <!-- Project 1 -->
+            <article class="project-card reveal" data-category="frontend" data-id="automart">
+              <div class="project-thumb t1">
+                <span>Showcase</span>
+                <div class="mini-window">
+                  <i></i><i></i><i></i>
+                  <b>A</b>
+                </div>
+              </div>
+              <div class="chips">
+                <span>Branding</span>
+                <span>UI Design</span>
+                <span>Responsive</span>
+              </div>
+              <h3>AutoMart</h3>
+              <p>A modern car showcase and discovery experience designed for vehicle exploration, responsive filtering, and seamless inquiry workflows.</p>
+              <div class="project-card-footer">
+                <span class="tech-text">HTML5 • CSS3 • JavaScript</span>
+                <button class="round project-details-btn" type="button" aria-label="View AutoMart details" data-project="automart">→</button>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal" data-category="ecommerce" data-id="menswear">
+              <div class="project-thumb t2">
+                <span>E-Commerce</span>
+                <div class="mini-window">
+                  <i></i><i></i><i></i>
+                  <b>M</b>
+                </div>
+              </div>
+              <div class="chips">
+                <span>Storefront</span>
+                <span>Frontend</span>
+                <span>Product Grid</span>
+              </div>
+              <h3>Men’s Wear</h3>
+              <p>Clean product layouts, interactive shopping cards, category filters, and checkout previews built for an elegant fashion retail experience.</p>
+              <div class="project-card-footer">
+                <span class="tech-text">HTML5 • CSS3 • Vanilla JS</span>
+                <button class="round project-details-btn" type="button" aria-label="View Men's Wear details" data-project="menswear">→</button>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal" data-category="dashboard" data-id="portal">
+              <div class="project-thumb t3">
+                <span>Management</span>
+                <div class="mini-window">
+                  <i></i><i></i><i></i>
+                  <b>E</b>
+                </div>
+              </div>
+              <div class="chips">
+                <span>Dashboard</span>
+                <span>Data Tables</span>
+                <span>Admin UI</span>
+              </div>
+              <h3>Employee Portal</h3>
+              <p>Structured employee management interface with searchable employee records, status filters, and clean data presentation.</p>
+              <div class="project-card-footer">
+                <span class="tech-text">HTML5 • CSS Grid • JS DOM</span>
+                <button class="round project-details-btn" type="button" aria-label="View Employee Portal details" data-project="portal">→</button>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card reveal" data-category="frontend" data-id="foodsite">
+              <div class="project-thumb t4">
+                <span>Landing Page</span>
+                <div class="mini-window">
+                  <i></i><i></i><i></i>
+                  <b>F</b>
+                </div>
+              </div>
+              <div class="chips">
+                <span>Food Catalog</span>
+                <span>UX</span>
+                <span>Mobile Optimized</span>
+              </div>
+              <h3>Food Selling Website</h3>
+              <p>A visually rich food catalog experience designed to highlight menu category browsing, vibrant item cards, and smooth ordering interactions.</p>
+              <div class="project-card-footer">
+                <span class="tech-text">HTML5 • CSS3 • Responsive</span>
+                <button class="round project-details-btn" type="button" aria-label="View Food Selling Website details" data-project="foodsite">→</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey / Experience Section -->
+      <section class="section container journey" id="journey">
+        <div class="section-heading reveal center-block">
+          <p class="eyebrow">Journey</p>
+          <h2>My <span>experience</span> &amp; learning path</h2>
+          <p class="section-subtext">How I built my foundation and continually evolve as a developer.</p>
+        </div>
+
+        <div class="journey-grid">
+          <div class="timeline reveal">
+            <div class="timeline-badge">🎓</div>
+            <h3>Education &amp; Foundation</h3>
+            <div class="timeline-item">
+              <small>2021 — 2024</small>
+              <b>Computer Science &amp; Web Development</b>
+              <p>Built a solid base in computer science fundamentals, programming logic, database structures, and modern web protocols.</p>
+            </div>
+            <div class="timeline-item">
+              <small>Continuous Skill Building</small>
+              <b>HTML5, CSS3, JavaScript Mastery</b>
+              <p>Deep-dived into front-end craft: semantic document structure, CSS architectures, responsive layouts, and ES6+ browser APIs.</p>
+            </div>
+          </div>
+
+          <div class="timeline reveal">
+            <div class="timeline-badge">💼</div>
+            <h3>Work &amp; Project Focus</h3>
+            <div class="timeline-item">
+              <small>Portfolio &amp; Client Projects</small>
+              <b>Front-End Web Development</b>
+              <p>Engineered responsive, accessible interfaces for e-commerce, portal dashboards, and commercial landing pages.</p>
+            </div>
+            <div class="timeline-item">
+              <small>Current Focus</small>
+              <b>Clean Front-end &amp; Interaction Design</b>
+              <p>Creating fast, lightweight digital experiences that balance aesthetic quality with practical client functionality.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section (Pure HTML5 & JS, Zero Backend Code) -->
+      <section class="contact section container" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build your <span>next</span> project</h2>
+          <p>
+            Have an idea for a portfolio, landing page, business website, or front-end interface? I’d love to collaborate with you.
+          </p>
+
+          <div class="contact-info-cards">
+            <a href="tel:+919384098304" class="info-card" title="Call Mathan">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <span>+91 93840 98304</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/919384098304?text=Hi%20Mathan%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="info-card whatsapp-card" title="Chat with Mathan on WhatsApp">
+              <div class="info-icon whatsapp-icon-bg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.196 8.196 0 01-5.82 2.41c-1.46 0-2.9-.38-4.17-1.11l-.3-.17-3.1 0.81 0.83-3.02-.2-.31a8.167 8.167 0 01-1.26-4.43c0-4.54 3.7-8.24 8.24-8.24zm-3.5 4.31c-.19 0-.41.07-.63.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.66-1.17.2-.57.2-1.07.14-1.17-.06-.1-.22-.16-.47-.28-.25-.12-1.45-.72-1.68-.8-.22-.08-.38-.12-.55.12-.16.25-.63.8-.77.96-.14.16-.28.18-.53.06-.25-.12-1.06-.39-2.02-1.24-.75-.67-1.26-1.49-1.41-1.74-.14-.25-.02-.38.11-.5.11-.11.25-.28.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42-.14-.01-.31-.01-.48-.01z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+91 93840 98304</span>
+              </div>
+            </a>
+
+            <div class="info-card email-card">
+              <div class="info-icon">✉</div>
+              <div class="email-details">
+                <strong>Email</strong>
+                <a href="mailto:mathan003m@gmail.com" class="email-link">mathan003m@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" type="button" title="Copy email address" aria-label="Copy email address">
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <span>Madurai, Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pure HTML5 Contact Form -->
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-header">
+            <h3>Send a Message</h3>
+            <p>Fill out the form below to connect instantly on WhatsApp (+91 93840 98304).</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact-name">Your Name <span class="required">*</span></label>
+              <input type="text" id="contact-name" name="name" placeholder="Mathan" required autocomplete="name" />
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="+91 93840 98304" autocomplete="tel" />
+              <span class="field-error" id="phone-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-interest">Interested In <span class="required">*</span></label>
+              <select id="contact-interest" name="interest" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Web Design">Web Design</option>
+                <option value="UI Development">UI Development</option>
+                <option value="Responsive UX">Responsive UX</option>
+                <option value="Frontend Development">Frontend Development</option>
+                <option value="Full Website Build">Full Website Build</option>
+                <option value="Other Inquiries">Other Inquiries</option>
+              </select>
+              <span class="field-error" id="interest-error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message <span class="required">*</span></label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project, timeline, and goals..." required></textarea>
+            <span class="field-error" id="message-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-footer">
+            <button class="btn submit-btn whatsapp-submit-btn" type="submit" id="submit-btn" aria-label="Submit message to WhatsApp">
+              <span class="btn-text">
+                <svg class="wa-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.196 8.196 0 01-5.82 2.41c-1.46 0-2.9-.38-4.17-1.11l-.3-.17-3.1 0.81 0.83-3.02-.2-.31a8.167 8.167 0 01-1.26-4.43c0-4.54 3.7-8.24 8.24-8.24zm-3.5 4.31c-.19 0-.41.07-.63.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.66-1.17.2-.57.2-1.07.14-1.17-.06-.1-.22-.16-.47-.28-.25-.12-1.45-.72-1.68-.8-.22-.08-.38-.12-.55.12-.16.25-.63.8-.77.96-.14.16-.28.18-.53.06-.25-.12-1.06-.39-2.02-1.24-.75-.67-1.26-1.49-1.41-1.74-.14-.25-.02-.38.11-.5.11-.11.25-.28.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42-.14-.01-.31-.01-.48-.01z"/>
+                </svg>
+                Submit Message
+              </span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+            <a href="https://wa.me/919384098304" target="_blank" rel="noopener noreferrer" class="outline whatsapp-direct-link" title="Chat directly on WhatsApp">
+              Direct WhatsApp &rarr;
+            </a>
+            <a href="mailto:mathan003m@gmail.com" class="outline email-direct-link" title="Open directly in email client">
+              Direct Email &rarr;
+            </a>
+          </div>
+
+          <!-- Live Form Status Banner -->
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <!-- About Section -->
+      <section class="about full" id="about">
+        <div class="container about-inner">
+          <div class="about-art reveal">
+            <div class="orbit" aria-hidden="true"></div>
+            <img class="img-small" src="images/1718.png" alt="Mathan M portrait" width="300" height="380" loading="lazy" />
+            <span class="bubble b1" aria-hidden="true">HTML5</span>
+            <span class="bubble b2" aria-hidden="true">CSS3</span>
+            <span class="bubble b3" aria-hidden="true">JS</span>
+            <span class="bubble b4" aria-hidden="true">UI/UX</span>
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="eyebrow light">About me</p>
+            <h2>Who is <span>Mathan M?</span></h2>
+            <p>
+              I’m a front-end-focused developer passionate about crafting sharp digital experiences with accessible layouts,
+              modern styling, and purposeful interactions. My goal is to turn ideas into polished, responsive web experiences.
+            </p>
+            <p>
+              I work with clean code principles, semantic markup, and cross-browser resilience. Every project is crafted with attention to performance, responsiveness on all screen sizes, and fluid aesthetics.
+            </p>
+
+            <div class="stats">
+              <div>
+                <b>10+</b>
+                <span>Projects built</span>
+              </div>
+              <div>
+                <b>4+</b>
+                <span>Core tools</span>
+              </div>
+              <div>
+                <b>100%</b>
+                <span>Creative focus</span>
+              </div>
+            </div>
+
+            <a class="btn light-btn" href="#contact">Let’s work together</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-badge">M</span>
+            <span class="brand-text">Mathan M</span>
+          </a>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#journey">Journey</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <p>© <span id="year">2026</span> Mathan M. Crafted with pure HTML5, CSS3, and JavaScript.</p>
+          <p class="footer-note">No backend required • Fast, accessible &amp; fully responsive</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Project Modal (HTML5 Dialog / Pure Client-Side) -->
+    <div class="project-modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="project-modal-dialog">
+        <button class="modal-close-btn" id="modal-close" type="button" aria-label="Close dialog">&times;</button>
+        <div class="modal-body" id="modal-body">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp Quick Chat Button -->
+    <a href="https://wa.me/919384098304?text=Hi%20Mathan%2C%20I%20am%20reaching%20out%20from%20your%20portfolio%20website!" target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsapp-float" aria-label="Chat with Mathan on WhatsApp" title="Chat on WhatsApp (+91 93840 98304)">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.196 8.196 0 01-5.82 2.41c-1.46 0-2.9-.38-4.17-1.11l-.3-.17-3.1 0.81 0.83-3.02-.2-.31a8.167 8.167 0 01-1.26-4.43c0-4.54 3.7-8.24 8.24-8.24zm-3.5 4.31c-.19 0-.41.07-.63.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.66-1.17.2-.57.2-1.07.14-1.17-.06-.1-.22-.16-.47-.28-.25-.12-1.45-.72-1.68-.8-.22-.08-.38-.12-.55.12-.16.25-.63.8-.77.96-.14.16-.28.18-.53.06-.25-.12-1.06-.39-2.02-1.24-.75-.67-1.26-1.49-1.41-1.74-.14-.25-.02-.38.11-.5.11-.11.25-.28.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42-.14-.01-.31-.01-.48-.01z"/>
+      </svg>
+      <span class="whatsapp-float-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Scroll back to top" title="Scroll back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="assertive" hidden>
+      <span class="toast-message" id="toast-message">Notification</span>
+    </div>
+
+    <!-- Pure JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
