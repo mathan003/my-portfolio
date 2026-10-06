@@ -14,3 +14,4 @@
   <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" fill="none" stroke="#F5B800" stroke-width="2" stroke-opacity="0.3"/>
   <path d="M18 46V18L32 34L46 18V46H39V29L32 38L25 29V46H18Z" fill="url(#goldGrad)" filter="url(#glow)"/>
 </svg>
+
