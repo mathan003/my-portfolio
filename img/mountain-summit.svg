@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18140B" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#10121A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#08090C" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="flagSun" cx="68%" cy="14%" r="35%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#F5B800" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="peakGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="45%" stop-color="#DDA300"/>
+      <stop offset="100%" stop-color="#5A3E00"/>
+    </linearGradient>
+    <linearGradient id="mountainLit" x1="0.3" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6A5228"/>
+      <stop offset="30%" stop-color="#42341A"/>
+      <stop offset="70%" stop-color="#221F1A"/>
+      <stop offset="100%" stop-color="#141416"/>
+    </linearGradient>
+    <linearGradient id="mountainShadow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2D251A"/>
+      <stop offset="50%" stop-color="#1A1817"/>
+      <stop offset="100%" stop-color="#0D0E12"/>
+    </linearGradient>
+    <linearGradient id="roadGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE57F" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#C8961E" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#554011" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Sky gradient & summit sun glow -->
+  <rect width="320" height="440" fill="url(#skyGlow)" rx="16"/>
+  <circle cx="218" cy="60" r="120" fill="url(#flagSun)"/>
+
+  <!-- Distant Background Ridge -->
+  <polygon points="40,440 120,220 180,310 240,190 320,380 320,440" fill="#161822" opacity="0.7"/>
+
+  <!-- Main Summit Body (Left Shadowed Ridge) -->
+  <path d="M218,65 L100,440 L224,440 Z" fill="url(#mountainShadow)"/>
+
+  <!-- Main Summit Body (Right Lit Ridge) -->
+  <path d="M218,65 L320,290 L320,440 L220,440 Z" fill="url(#mountainLit)"/>
+
+  <!-- Craggy Ridge Facets and Highlights -->
+  <path d="M218,65 L205,115 L228,150 L212,210 L236,270 L218,340 L240,440" stroke="#F5B800" stroke-width="2" fill="none" opacity="0.55"/>
+  <polygon points="218,65 212,110 226,145 218,65" fill="#F5B800" opacity="0.35"/>
+  <polygon points="228,150 248,185 235,215 228,150" fill="#DDA300" opacity="0.2"/>
+  <polygon points="218,65 228,95 235,130 220,110" fill="#FFF1A8" opacity="0.4"/>
+
+  <!-- Mountain Slope Foreground Rock Layer -->
+  <path d="M0,440 L60,330 L160,390 L260,440 Z" fill="#12141C" opacity="0.9"/>
+
+  <!-- Winding Golden Path / Road ascending to Summit -->
+  <path d="M240,440 C220,390 190,340 215,300 C238,260 225,230 212,205 C202,185 220,160 214,130 C210,110 217,80 218,65"
+        stroke="url(#roadGrad)" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M240,440 C220,390 190,340 215,300 C238,260 225,230 212,205 C202,185 220,160 214,130 C210,110 217,80 218,65"
+        stroke="#FFF3B0" stroke-width="2.5" stroke-dasharray="6,6" fill="none" opacity="0.85"/>
+
+  <!-- Summit Flagpole and Golden Flag -->
+  <line x1="218" y1="65" x2="218" y2="18" stroke="#FFD700" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="218" cy="18" r="3.5" fill="#FFF4B8" filter="url(#glow)"/>
+  <path d="M218,20 C232,15 242,27 256,22 C252,32 258,40 248,42 C236,36 228,45 218,38 Z" fill="url(#peakGold)" filter="url(#glow)"/>
+
+  <!-- Milestone Beacon Star Pulses on Road -->
+  <circle cx="235" cy="375" r="4" fill="#F5B800" filter="url(#glow)"/>
+  <circle cx="210" cy="290" r="3.5" fill="#F5B800" filter="url(#glow)"/>
+  <circle cx="218" cy="200" r="3.5" fill="#F5B800" filter="url(#glow)"/>
+  <circle cx="213" cy="125" r="3" fill="#F5B800" filter="url(#glow)"/>
+  <circle cx="218" cy="65" r="4.5" fill="#FFE885" filter="url(#glow)"/>
+
+  <!-- Subtle ambient stars -->
+  <circle cx="70" cy="50" r="1.2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="120" cy="80" r="1" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="45" cy="120" r="1.5" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="160" cy="40" r="1.2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="280" cy="110" r="1.5" fill="#FFE885" opacity="0.8"/>
+</svg>
+

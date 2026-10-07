@@ -257,27 +257,28 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================================
      7. 3D Tilt Effect on Hero Portrait
      ========================================================================== */
-  if (heroTiltCard) {
-    const frame = heroTiltCard.querySelector('.portrait-frame');
-    heroTiltCard.addEventListener('mousemove', (e) => {
-      const rect = heroTiltCard.getBoundingClientRect();
+  function attachTiltEffect(cardElement, targetSelector) {
+    if (!cardElement) return;
+    const target = cardElement.querySelector(targetSelector) || cardElement;
+    cardElement.addEventListener('mousemove', (e) => {
+      const rect = cardElement.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
 
-      const rotateY = (x / (rect.width / 2)) * 10;
-      const rotateX = -(y / (rect.height / 2)) * 10;
+      const rotateY = (x / (rect.width / 2)) * 8;
+      const rotateX = -(y / (rect.height / 2)) * 8;
 
-      if (frame) {
-        frame.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
-      }
+      target.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
     });
 
-    heroTiltCard.addEventListener('mouseleave', () => {
-      if (frame) {
-        frame.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-      }
+    cardElement.addEventListener('mouseleave', () => {
+      target.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
     });
   }
+
+  attachTiltEffect(heroTiltCard, '.portrait-frame');
+  const aboutTiltCard = document.getElementById('about-tilt-card');
+  attachTiltEffect(aboutTiltCard, '.about-poster-stage');
 
   /* ==========================================================================
      8. Scroll Reveal Animations (IntersectionObserver)
@@ -340,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
      10. Project Filtering
      ========================================================================== */
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const projectCards = document.querySelectorAll('.project-card, .work-card');
 
   filterButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -371,56 +372,82 @@ document.addEventListener('DOMContentLoaded', () => {
      11. Project Details Modal (Deep Dive Previews)
      ========================================================================== */
   const projectData = {
-    automart: {
-      title: 'AutoMart Car Showcase',
-      category: 'Frontend & UI Showcase',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'CSS Grid'],
+    ecommerce: {
+      title: '01. E-Commerce Website (NCPL Computers & CCTV)',
+      category: 'Computer & CCTV Camera Sales & Services',
+      tech: ['React.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'JavaScript', 'WhatsApp API'],
       description:
-        'A comprehensive automotive showroom and discovery portal built with pure semantic HTML5, modern CSS3 layouts, and dynamic JavaScript filtering. Designed with a sleek, premium automotive aesthetic.',
+        'A full-featured commercial storefront built for computer sales, CCTV surveillance equipment, and repair services. Features an interactive product catalog, WhatsApp instant ordering workflow, and embedded interactive map location.',
       features: [
-        'Vehicle model comparison & detail preview modal',
-        'Multi-attribute search and category filters (Sedan, SUV, Luxury)',
-        'Fully responsive card grid and interactive specs breakdown',
-        'Smooth inquiry workflows and test-drive booking interface'
+        'Dynamic product catalog with multi-category filters (Desktops, Laptops, CCTV Solutions)',
+        'Live shopping cart with automated bill estimate',
+        'Direct 1-click WhatsApp order generation with full cart summary',
+        'Interactive Google Maps store locator and contact enquiry form'
+      ]
+    },
+    carbuying: {
+      title: '02. Car Buying Website (SB Cars)',
+      category: 'Automotive Showroom & Inventory Portal',
+      tech: ['React.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'JavaScript (ES6+)'],
+      description:
+        'A comprehensive automotive marketplace portal where users can browse car listings, inspect vehicle specifications, book test drives, and submit direct enquiries. Includes an administrative portal for managing car inventory.',
+      features: [
+        'Vehicle model showcase with high-res photo gallery and specs comparison',
+        'Multi-attribute search and category filters (Sedan, SUV, Hatchback, Luxury)',
+        'Online test-drive booking and customer enquiry form',
+        'Responsive administrative dashboard for inventory and pricing management'
+      ]
+    },
+    employee: {
+      title: '03. Employee Management System',
+      category: 'HR Management & Payroll Automation',
+      tech: ['Python', 'Django', 'SQLite', 'Bootstrap', 'REST APIs'],
+      description:
+        'A workplace HR management portal for tracking employee records, punch-in/out attendance, leave management, work update logs, and automated salary calculations with detailed monthly payslips.',
+      features: [
+        'Attendance tracking with punch-in/out timestamps and leave approval workflow',
+        'Salary and compensation calculation engine based on working days and overtime',
+        'Employee directory with searchable profile cards and role permissions',
+        'Department-wise reporting with downloadable administrative records'
+      ]
+    },
+    student: {
+      title: '04. Student Management System',
+      category: 'Academic Administration & Records',
+      tech: ['Python', 'Django', 'SQLite', 'Bootstrap', 'CSS3'],
+      description:
+        'A complete educational administration system designed to manage student admissions, academic batches, fee collections with payment status badges, daily attendance, and student photo directories.',
+      features: [
+        'Student profile management with batch categorization and photo storage',
+        'Fee ledger tracking with Paid/Pending status badges and receipts',
+        'Daily roll-call attendance logger and percentage calculator',
+        'Exam grading and progress reporting module'
+      ]
+    },
+    billing: {
+      title: '05. Billing Project (SmartBilling POS & MathanHub)',
+      category: 'Retail Point-of-Sale & Inventory Suite',
+      tech: ['Python', 'Django', 'SQLite', 'Bootstrap', 'REST API', 'JavaScript'],
+      description:
+        'A high-performance retail billing and inventory management software (SmartBilling POS). Enables instant barcode scanning, rapid invoice generation, GST tax calculation, stock tracking, and daily sales dashboards.',
+      features: [
+        'Rapid barcode-driven Point-of-Sale (POS) cash and wholesale checkout',
+        'Automated GST tax calculation and instant thermal receipt printing',
+        'Live stock inventory management with low-stock alerts and SKU lookup',
+        'Daily, weekly, and monthly sales analytics dashboard with revenue charts'
       ]
     },
     menswear: {
-      title: 'Men’s Wear E-Commerce',
-      category: 'Storefront & UX',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'Local Storage', 'Flexbox'],
+      title: '06. Men’s Wear Website (StyleHub)',
+      category: 'Fashion Apparel & Online Storefront',
+      tech: ['React.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'JavaScript'],
       description:
-        'A modern apparel shopping experience tailored for digital fashion retail. Features smooth catalog navigation, quick item previews, size selections, and client-side bag state.',
+        'A modern responsive men’s fashion e-commerce storefront showcasing seasonal collections, interactive size & color pickers, client-side shopping cart persistence, and an administrative order management system.',
       features: [
-        'Clean product display cards with hover micro-interactions',
-        'Size, color, and fit selector tabs',
-        'Client-side cart calculation with local storage persistence',
-        'Optimized for mobile-first handheld shopping ergonomics'
-      ]
-    },
-    portal: {
-      title: 'Employee Portal Dashboard',
-      category: 'Management & Dashboard UI',
-      tech: ['HTML5', 'CSS3', 'JavaScript DOM', 'Data Tables', 'WCAG a11y'],
-      description:
-        'A structured workplace administration portal for managing staff profiles, department records, and performance milestones with high clarity and accessible color contrasts.',
-      features: [
-        'Live search and department filterable employee directory',
-        'Clean responsive data tables with status pills',
-        'Profile overview cards and quick activity metrics',
-        'High accessibility contrast meeting WCAG AA standards'
-      ]
-    },
-    foodsite: {
-      title: 'Food Selling Website',
-      category: 'Catalog & Landing Page',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive UI', 'Mobile First'],
-      description:
-        'An engaging culinary showcase built to make online menu discovery and dish ordering enjoyable with appetizing layouts, cuisine tags, and clean order workflows.',
-      features: [
-        'Categorized dish menus (Starters, Main Course, Desserts)',
-        'Dietary badges (Veg, Non-Veg, Chef Special)',
-        'Smooth price tally and order inquiry trigger',
-        'Fast lightweight asset delivery without framework bloat'
+        'Trendy apparel display cards with hover zoom and quick item previews',
+        'Interactive size, fit, and color variation selection',
+        'Persistent client-side shopping bag with local storage support',
+        'Responsive layout optimized for handheld mobile-first shopping'
       ]
     }
   };

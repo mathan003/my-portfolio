@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Mathan M is a Web Developer & Digital Learner crafting modern, responsive, and high-performance digital experiences with HTML5, CSS3, JavaScript, React, and Python." />
-    <meta name="keywords" content="Mathan M, Web Developer, Frontend Developer, Full Stack, HTML5, CSS3, JavaScript, React, Python, Django, Madurai, Tamil Nadu" />
+    <meta name="description" content="Mathan M is a Web Developer & Digital Learner crafting modern, responsive, and high-performance digital experiences with HTML5, Tailwind CSS, JavaScript, React, and Python." />
+    <meta name="keywords" content="Mathan M, Web Developer, Frontend Developer, Full Stack, HTML5, Tailwind CSS, JavaScript, React, Python, Django, Madurai, Tamil Nadu" />
     <meta name="author" content="Mathan M" />
     <meta name="theme-color" content="#0B0F19" />
 
@@ -24,6 +24,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS (CDN Utility Engine) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        corePlugins: {
+          preflight: false, // Preserves custom typography and resets
+        }
+      }
+    </script>
 
     <!-- Stylesheets (Root and fallback) -->
     <link rel="stylesheet" href="style.css" />
@@ -54,8 +64,11 @@
           <a href="#skills" class="nav-link">Skills</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#services" class="nav-link">Services</a>
-          <a href="#journey" class="nav-link">Journey</a>
           <a href="#contact" class="nav-link">Contact</a>
+          <a href="https://wa.me/919384098304" target="_blank" rel="noopener noreferrer" class="nav-link nav-whatsapp-link" title="Chat on WhatsApp">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color: #25d366; display: inline-block; vertical-align: -2px; margin-right: 5px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.196 8.196 0 01-5.82 2.41c-1.46 0-2.9-.38-4.17-1.11l-.3-.17-3.1 0.81 0.83-3.02-.2-.31a8.167 8.167 0 01-1.26-4.43c0-4.54 3.7-8.24 8.24-8.24zm-3.5 4.31c-.19 0-.41.07-.63.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.66-1.17.2-.57.2-1.07.14-1.17-.06-.1-.22-.16-.47-.28-.25-.12-1.45-.72-1.68-.8-.22-.08-.38-.12-.55.12-.16.25-.63.8-.77.96-.14.16-.28.18-.53.06-.25-.12-1.06-.39-2.02-1.24-.75-.67-1.26-1.49-1.41-1.74-.14-.25-.02-.38.11-.5.11-.11.25-.28.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42-.14-.01-.31-.01-.48-.01z"/></svg>
+            <span>WhatsApp</span>
+          </a>
         </nav>
 
         <div class="header-actions">
@@ -202,7 +215,7 @@
               <!-- Floating Interactive Badges with CSS physics-like float -->
               <div class="float-badge badge-top-right float-anim-1">
                 <span class="pulse-dot"></span>
-                <span>Available for Hire</span>
+                <span>Available</span>
               </div>
 
               <div class="float-badge badge-bottom-left float-anim-2">
@@ -232,7 +245,8 @@
         <div class="ticker" id="ticker">
           <div class="ticker-track">
             <span>HTML5 Semantic</span><span class="ticker-dot">✦</span>
-            <span>CSS3 &amp; Modern Flexbox/Grid</span><span class="ticker-dot">✦</span>
+            <span>Tailwind CSS</span><span class="ticker-dot">✦</span>
+            <span>Responsive Tailwind UI</span><span class="ticker-dot">✦</span>
             <span>JavaScript (ES6+)</span><span class="ticker-dot">✦</span>
             <span>React.js</span><span class="ticker-dot">✦</span>
             <span>Python</span><span class="ticker-dot">✦</span>
@@ -245,7 +259,8 @@
             <span>Performance &amp; Accessibility</span><span class="ticker-dot">✦</span>
             <!-- Duplicate for seamless loop -->
             <span>HTML5 Semantic</span><span class="ticker-dot">✦</span>
-            <span>CSS3 &amp; Modern Flexbox/Grid</span><span class="ticker-dot">✦</span>
+            <span>Tailwind CSS</span><span class="ticker-dot">✦</span>
+            <span>Responsive Tailwind UI</span><span class="ticker-dot">✦</span>
             <span>JavaScript (ES6+)</span><span class="ticker-dot">✦</span>
             <span>React.js</span><span class="ticker-dot">✦</span>
             <span>Python</span><span class="ticker-dot">✦</span>
@@ -261,77 +276,125 @@
       </section>
 
       <!-- ======================================================================
-           ABOUT SECTION (Developer Story & Mission)
+           ABOUT SECTION (Developer Story & Social Connections)
            ====================================================================== -->
       <section class="about-section section" id="about">
         <div class="container">
-          <div class="section-header reveal">
-            <p class="section-tag">About Me</p>
-            <h2 class="section-title">Driven by <span>curiosity</span> &amp; clean code</h2>
-            <p class="section-desc">Get to know the developer behind the screen.</p>
-          </div>
+          <div class="about-poster-wrapper reveal" id="about-tilt-card">
+            <!-- High-Res Interactive Poster Showcase Matching Artwork Reference (Desktop Screens > 768px) -->
+            <div class="about-poster-stage about-desktop-view">
+              <img
+                src="img/about-me-poster.png"
+                alt="About Mathan M - Web Developer &amp; Digital Learner"
+                class="about-poster-img"
+                width="1374"
+                height="1145"
+                loading="lazy"
+              />
 
-          <div class="about-grid">
-            <!-- About Card 1: Bio Story -->
-            <div class="about-card story-card reveal">
-              <div class="card-glow" aria-hidden="true"></div>
-              <div class="story-content">
-                <span class="card-icon-badge">👨‍💻</span>
-                <h3>Who I Am</h3>
-                <p>
-                  I'm <strong>Mathan M</strong>, a dedicated Web Developer and passionate Digital Learner based in Madurai, India. I specialize in designing and engineering high-impact web applications that combine intuitive aesthetics with rock-solid frontend and backend craftsmanship.
+              <!-- Interactive Clickable Hotspots mapped directly over the poster elements -->
+              <a
+                href="#contact"
+                class="poster-hotspot hotspot-connect"
+                aria-label="Let's Connect"
+                title="Let's Connect - Send Message"
+              >
+                <span class="hotspot-ripple"></span>
+              </a>
+
+              <a
+                href="https://github.com/mathan003"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="poster-hotspot hotspot-github"
+                aria-label="GitHub Profile (@mathan003)"
+                title="Git &amp; GitHub (@mathan003)"
+              >
+                <span class="hotspot-glow"></span>
+              </a>
+
+              <a
+                href="https://linkedin.com/in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="poster-hotspot hotspot-linkedin"
+                aria-label="LinkedIn Profile"
+                title="LinkedIn Profile"
+              >
+                <span class="hotspot-glow"></span>
+              </a>
+
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="poster-hotspot hotspot-instagram"
+                aria-label="Instagram Profile"
+                title="Instagram Profile"
+              >
+                <span class="hotspot-glow"></span>
+              </a>
+            </div>
+
+            <!-- Mobile Responsive Showcase (Screens <= 768px): Small Mathan Portrait + Large Legible Typography -->
+            <div class="about-mobile-view">
+              <!-- Small Portrait Image with Yellow Brush Stroke -->
+              <div class="about-mobile-portrait-wrap">
+                <img
+                  src="img/about-mathan-clean.png"
+                  alt="Mathan M - Web Developer &amp; Digital Learner"
+                  class="about-mobile-portrait-img"
+                  width="864"
+                  height="1145"
+                  loading="lazy"
+                />
+              </div>
+
+              <!-- Inside Content with Increased Font Size -->
+              <div class="about-mobile-content">
+                <div class="about-mobile-tag">
+                  <span class="about-mobile-tag-line" aria-hidden="true"></span>
+                  <span>ABOUT ME</span>
+                </div>
+
+                <h2 class="about-mobile-title">
+                  Hi, I’m <span class="highlight-gold shimmer-text">Mathan</span>
+                </h2>
+
+                <p class="about-mobile-bio">
+                  A passionate Web Developer and Digital Learner with an interest in creating modern, 
+                  responsive, and user-friendly web applications. I enjoy turning ideas into practical 
+                  digital solutions and continuously improving my skills through real-world projects.
                 </p>
-                <p>
-                  My development philosophy centers around three principles: <strong>Simplicity</strong> in design, <strong>Speed</strong> in execution, and <strong>Reliability</strong> in code. Whether building a full e-commerce storefront or a dashboard portal, I craft every detail with purpose.
-                </p>
-                <div class="about-details-list">
-                  <div class="detail-item">
-                    <span class="detail-label">Location:</span>
-                    <span class="detail-value">Madurai, Tamil Nadu, India</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Status:</span>
-                    <span class="detail-value status-available">Open for Opportunities</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Email:</span>
-                    <span class="detail-value">mathan003m@gmail.com</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Phone:</span>
-                    <span class="detail-value">+91 93840 98304</span>
+
+                <div class="about-mobile-cta-group">
+                  <a href="#contact" class="btn btn-primary about-mobile-connect-btn">
+                    <span>Let's Connect</span>
+                    <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+
+                  <div class="about-mobile-socials" aria-label="Social Profiles">
+                    <a href="https://github.com/mathan003" target="_blank" rel="noopener noreferrer" class="about-mobile-social-btn" title="GitHub (@mathan003)" aria-label="GitHub">
+                      <img src="img/icon-github-circle.png" alt="GitHub" width="44" height="44" />
+                    </a>
+                    <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="about-mobile-social-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                      <img src="img/icon-linkedin-circle.png" alt="LinkedIn" width="44" height="44" />
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="about-mobile-social-btn" title="Instagram Profile" aria-label="Instagram">
+                      <img src="img/icon-instagram-circle.png" alt="Instagram" width="44" height="44" />
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- About Card 2: Pillars of Craft -->
-            <div class="about-card pillars-card reveal">
-              <div class="card-glow" aria-hidden="true"></div>
-              <h3>What I Bring to the Table</h3>
-              <div class="pillars-list">
-                <div class="pillar-item">
-                  <div class="pillar-num">01</div>
-                  <div class="pillar-info">
-                    <h4>Modern Frontend Craft</h4>
-                    <p>Semantic HTML5, modular CSS architecture, responsive Flexbox/Grid, and scalable JavaScript/React components.</p>
-                  </div>
-                </div>
-                <div class="pillar-item">
-                  <div class="pillar-num">02</div>
-                  <div class="pillar-info">
-                    <h4>Robust Backend &amp; Logic</h4>
-                    <p>Python and Django web architectures, RESTful APIs, data validation, and database querying.</p>
-                  </div>
-                </div>
-                <div class="pillar-item">
-                  <div class="pillar-num">03</div>
-                  <div class="pillar-info">
-                    <h4>User-Centric UX</h4>
-                    <p>Fast load times, smooth micro-interactions, WCAG accessibility, and pixel-perfect mobile-first design.</p>
-                  </div>
-                </div>
-              </div>
+            <!-- Semantic SEO markup for search engines & screen readers -->
+            <div class="sr-only">
+              <h2>About Me - Hi, I'm Mathan</h2>
+              <p>
+                A passionate Web Developer and Digital Learner with an interest in creating modern,
+                responsive, and user-friendly web applications with Tailwind CSS, React, and Python.
+              </p>
             </div>
           </div>
         </div>
@@ -370,8 +433,8 @@
                 </svg>
                 <span class="meter-val">0%</span>
               </div>
-              <strong class="meter-title">CSS3 &amp; Responsive Layouts</strong>
-              <small class="meter-desc">Flexbox, Grid &amp; Keyframe Anim</small>
+              <strong class="meter-title">Tailwind CSS &amp; Modern Layouts</strong>
+              <small class="meter-desc">Utility-First, Flexbox &amp; Grid</small>
             </div>
 
             <div class="skill-meter-card reveal" data-target="90">
@@ -426,8 +489,8 @@
           <!-- Tech Pills Cloud -->
           <div class="tech-cloud reveal">
             <span class="tech-tag">Semantic HTML5</span>
-            <span class="tech-tag">Modern CSS3</span>
-            <span class="tech-tag">CSS Custom Properties</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Tailwind UI</span>
             <span class="tech-tag">JavaScript (ES6+)</span>
             <span class="tech-tag">React.js</span>
             <span class="tech-tag">Python</span>
@@ -444,166 +507,197 @@
       </section>
 
       <!-- ======================================================================
-           PROJECTS SECTION (Filterable Showcase with Details Modal)
+           MY WORKS SECTION (Directly matching Reference Image & 6 Projects)
            ====================================================================== -->
       <section class="projects-section section" id="projects">
         <div class="container">
-          <div class="section-header reveal">
-            <p class="section-tag">Portfolio Showcase</p>
-            <h2 class="section-title">Selected <span>projects</span></h2>
-            <p class="section-desc">Real-world applications crafted with precision and care.</p>
+          <div class="section-header works-header reveal">
+            <div class="works-badge">
+              <span class="yellow-dash"></span>
+              <span class="works-tag-text">MY WORKS</span>
+            </div>
+            <h2 class="section-title works-main-title">
+              Some of My <span class="text-gold">Projects</span>
+            </h2>
+            <p class="section-desc works-sub-desc">
+              Here are some of the projects I've worked on, showcasing my skills in web development, design, and real-world problem solving.
+            </p>
 
             <!-- Filter Tabs -->
             <div class="project-filters" role="tablist" aria-label="Filter projects by category">
-              <button class="filter-btn active" data-filter="all" type="button" role="tab">All</button>
-              <button class="filter-btn" data-filter="frontend" type="button" role="tab">Frontend</button>
-              <button class="filter-btn" data-filter="storefront" type="button" role="tab">E-Commerce</button>
-              <button class="filter-btn" data-filter="dashboard" type="button" role="tab">Dashboards</button>
+              <button class="filter-btn active" data-filter="all" type="button" role="tab">All (6)</button>
+              <button class="filter-btn" data-filter="frontend" type="button" role="tab">Frontend &amp; React</button>
+              <button class="filter-btn" data-filter="backend" type="button" role="tab">Python &amp; Django</button>
+              <button class="filter-btn" data-filter="pos" type="button" role="tab">POS &amp; Systems</button>
             </div>
           </div>
 
-          <!-- Project Cards Grid -->
-          <div class="projects-grid" id="projects-grid">
-            <!-- Project 1: AutoMart -->
-            <article class="project-card reveal" data-category="frontend" data-id="automart">
-              <div class="project-visual p-thumb-1">
-                <div class="browser-chrome">
-                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                  <span class="address-bar">automart-showcase.local</span>
-                </div>
-                <div class="visual-badge">Automotive Portal</div>
-                <div class="visual-graphic">
-                  <div class="graphic-icon">🚗</div>
-                  <div class="graphic-code-preview">
-                    <code>&lt;div class="car-grid"&gt;...&lt;/div&gt;</code>
-                  </div>
-                </div>
+          <!-- 6 Projects Grid matching reference image -->
+          <div class="works-grid" id="projects-grid">
+            <!-- Project 01: E-Commerce Website -->
+            <article class="work-card reveal" data-category="frontend" data-id="ecommerce">
+              <div class="work-thumb-wrapper">
+                <img src="img/project-01.png" alt="E-Commerce Website - Computers and CCTV Camera sales" class="work-thumb-img" loading="lazy" />
               </div>
-
-              <div class="project-info">
-                <div class="project-chips">
-                  <span>Frontend</span>
-                  <span>UI Showcase</span>
-                  <span>Interactive</span>
-                </div>
-                <h3 class="project-title">AutoMart Car Showcase</h3>
-                <p class="project-summary">
-                  A comprehensive automotive showroom and discovery portal featuring model previews, multi-attribute category filters, and test-drive scheduling flows.
-                </p>
-                <div class="project-footer">
-                  <span class="tech-stack-text">HTML5 • CSS3 • JavaScript • CSS Grid</span>
-                  <button class="project-modal-btn" type="button" aria-label="View AutoMart details" data-project="automart">
-                    <span>Details</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <div class="work-card-body">
+                <div class="work-card-top">
+                  <div class="work-title-group">
+                    <span class="work-num">01</span>
+                    <h3 class="work-title">E-Commerce Website</h3>
+                  </div>
+                  <button class="work-live-btn project-modal-btn" type="button" data-project="ecommerce" aria-label="Live Demo for E-Commerce Website">
+                    <span>Live Demo</span>
+                    <span class="work-arrow">➔</span>
                   </button>
+                </div>
+                <p class="work-desc">
+                  Computer and CCTV camera sales &amp; services website with cart, WhatsApp order and map location.
+                </p>
+                <div class="work-tech-tags">
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="-11.5 -10.23 23 20.46" fill="#61DAFB"><circle r="2.05"/><g stroke="#61DAFB" stroke-width="1.1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg> React</span>
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.4 1.4 2.8 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6-1.4-1.4-2.8-2.6-5.5-2.6zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.4 1.4 2.8 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6-1.4-1.4-2.8-2.6-5.5-2.6z"/></svg> Tailwind CSS</span>
+                  <span class="work-tech-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="#E44D26"><path d="M4 2.5L5.6 20.5L12 22.3L18.4 20.5L20 2.5H4Z"/><path d="M12 4.1V20.6L16.9 19.2L18.3 4.1H12Z" fill="#F16529"/><path d="M12 7.7H8.5L8.7 10.2H12V12.7H8.9L9.3 16.3L12 17.1V19.4L7 18L6.4 10.2L6.1 5.3H12V7.7ZM12 12.7V10.2H15.3L15.6 7.7H12V5.3H17.8L17.5 9.1L17.2 12.7H12ZM15 14.8L14.7 17.1L12 17.9V19.4L16.9 18L17.1 14.8H15Z" fill="#FFF"/></svg> HTML</span>
+                  <span class="work-tech-pill work-pill-js"><span class="work-js-sq">JS</span> JS</span>
                 </div>
               </div>
             </article>
 
-            <!-- Project 2: Men's Wear -->
-            <article class="project-card reveal" data-category="storefront" data-id="menswear">
-              <div class="project-visual p-thumb-2">
-                <div class="browser-chrome">
-                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                  <span class="address-bar">menswear-store.local</span>
-                </div>
-                <div class="visual-badge">Storefront &amp; UX</div>
-                <div class="visual-graphic">
-                  <div class="graphic-icon">🛍️</div>
-                  <div class="graphic-code-preview">
-                    <code>&lt;Cart items={bagState} /&gt;</code>
-                  </div>
-                </div>
+            <!-- Project 02: Car Buying Website -->
+            <article class="work-card reveal" data-category="frontend" data-id="carbuying">
+              <div class="work-thumb-wrapper">
+                <img src="img/project-02.png" alt="Car Buying Website - SB Cars showroom" class="work-thumb-img" loading="lazy" />
               </div>
-
-              <div class="project-info">
-                <div class="project-chips">
-                  <span>Storefront</span>
-                  <span>E-Commerce</span>
-                  <span>Cart State</span>
-                </div>
-                <h3 class="project-title">Men’s Wear E-Commerce</h3>
-                <p class="project-summary">
-                  Modern apparel shopping experience with item quick-views, interactive size &amp; color pickers, and persistent client-side shopping bag calculations.
-                </p>
-                <div class="project-footer">
-                  <span class="tech-stack-text">HTML5 • CSS3 • JavaScript • Local Storage</span>
-                  <button class="project-modal-btn" type="button" aria-label="View Men's Wear details" data-project="menswear">
-                    <span>Details</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <div class="work-card-body">
+                <div class="work-card-top">
+                  <div class="work-title-group">
+                    <span class="work-num">02</span>
+                    <h3 class="work-title">Car Buying Website</h3>
+                  </div>
+                  <button class="work-live-btn project-modal-btn" type="button" data-project="carbuying" aria-label="Live Demo for Car Buying Website">
+                    <span>Live Demo</span>
+                    <span class="work-arrow">➔</span>
                   </button>
+                </div>
+                <p class="work-desc">
+                  Car listing, details, enquiry form and admin panel for managing cars.
+                </p>
+                <div class="work-tech-tags">
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="-11.5 -10.23 23 20.46" fill="#61DAFB"><circle r="2.05"/><g stroke="#61DAFB" stroke-width="1.1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg> React</span>
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.4 1.4 2.8 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6-1.4-1.4-2.8-2.6-5.5-2.6zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.4 1.4 2.8 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6-1.4-1.4-2.8-2.6-5.5-2.6z"/></svg> Tailwind CSS</span>
+                  <span class="work-tech-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="#E44D26"><path d="M4 2.5L5.6 20.5L12 22.3L18.4 20.5L20 2.5H4Z"/><path d="M12 4.1V20.6L16.9 19.2L18.3 4.1H12Z" fill="#F16529"/><path d="M12 7.7H8.5L8.7 10.2H12V12.7H8.9L9.3 16.3L12 17.1V19.4L7 18L6.4 10.2L6.1 5.3H12V7.7ZM12 12.7V10.2H15.3L15.6 7.7H12V5.3H17.8L17.5 9.1L17.2 12.7H12ZM15 14.8L14.7 17.1L12 17.9V19.4L16.9 18L17.1 14.8H15Z" fill="#FFF"/></svg> HTML</span>
+                  <span class="work-tech-pill work-pill-js"><span class="work-js-sq">JS</span> JS</span>
                 </div>
               </div>
             </article>
 
-            <!-- Project 3: Employee Portal -->
-            <article class="project-card reveal" data-category="dashboard" data-id="portal">
-              <div class="project-visual p-thumb-3">
-                <div class="browser-chrome">
-                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                  <span class="address-bar">staff-portal.local/admin</span>
-                </div>
-                <div class="visual-badge">Dashboard &amp; Tables</div>
-                <div class="visual-graphic">
-                  <div class="graphic-icon">📊</div>
-                  <div class="graphic-code-preview">
-                    <code>SELECT * FROM employees WHERE active = 1</code>
-                  </div>
-                </div>
+            <!-- Project 03: Employee Management System -->
+            <article class="work-card reveal" data-category="backend" data-id="employee">
+              <div class="work-thumb-wrapper">
+                <img src="img/project-03.png" alt="Employee Management System - Attendance, leave, salary calculation" class="work-thumb-img" loading="lazy" />
               </div>
-
-              <div class="project-info">
-                <div class="project-chips">
-                  <span>Dashboard</span>
-                  <span>Data Tables</span>
-                  <span>Admin UI</span>
-                </div>
-                <h3 class="project-title">Employee Portal Dashboard</h3>
-                <p class="project-summary">
-                  A structured workplace administration portal for managing staff profiles, department records, and performance milestones with searchable tables.
-                </p>
-                <div class="project-footer">
-                  <span class="tech-stack-text">HTML5 • CSS Grid • JavaScript DOM • a11y</span>
-                  <button class="project-modal-btn" type="button" aria-label="View Employee Portal details" data-project="portal">
-                    <span>Details</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <div class="work-card-body">
+                <div class="work-card-top">
+                  <div class="work-title-group">
+                    <span class="work-num">03</span>
+                    <h3 class="work-title">Employee Management System</h3>
+                  </div>
+                  <button class="work-live-btn project-modal-btn" type="button" data-project="employee" aria-label="Live Demo for Employee Management System">
+                    <span>Live Demo</span>
+                    <span class="work-arrow">➔</span>
                   </button>
+                </div>
+                <p class="work-desc">
+                  Attendance, leave, work updates, salary calculation and HR management system.
+                </p>
+                <div class="work-tech-tags">
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M11.9 0C5.8 0 6.2 2.6 6.2 2.6l.006 2.7h5.8v.8H3.9S0 5.8 0 11.9c0 6.1 3.4 5.9 3.4 5.9h2v-2.8s-.1-3.4 3.3-3.4h5.8s3.2 0 3.2-3.1V3.1S18.3 0 11.9 0zm-3.3 1.8a1 1 0 1 1 0 2.1 1 1 0 0 1 0-2.1z" fill="#38BDF8"/><path d="M12.1 24c6.1 0 5.7-2.6 5.7-2.6l-.006-2.7h-5.8v-.8h8.1s3.9.4 3.9-5.7c0-6.1-3.4-5.9-3.4-5.9h-2v2.8s.1 3.4-3.3 3.4H9.5s-3.2 0-3.2 3.1v5.3S5.7 24 12.1 24zm3.3-1.8a1 1 0 1 1 0-2.1 1 1 0 0 1 0 2.1z" fill="#F5B800"/></svg> Python</span>
+                  <span class="work-tech-pill"><span class="work-dj-badge">dj</span> Django</span>
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="#0EA5E9"><path d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5zm0 2c4.7 0 8 1.8 8 3s-3.3 3-8 3-8-1.8-8-3 3.3-3 8-3zm8 7.3c-.8 1.1-4 2.7-8 2.7s-7.2-1.6-8-2.7V9.5c1.9 1.4 5 2.2 8 2.2s6.1-.8 8-2.2v1.8zm0 5c-.8 1.1-4 2.7-8 2.7s-7.2-1.6-8-2.7v-1.8c1.9 1.4 5 2.2 8 2.2s6.1-.8 8-2.2v1.8z"/></svg> SQLite</span>
+                  <span class="work-tech-pill"><span class="work-bs-badge">B</span> Bootstrap</span>
                 </div>
               </div>
             </article>
 
-            <!-- Project 4: FoodHub -->
-            <article class="project-card reveal" data-category="frontend" data-id="foodsite">
-              <div class="project-visual p-thumb-4">
-                <div class="browser-chrome">
-                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                  <span class="address-bar">foodhub-gourmet.local</span>
-                </div>
-                <div class="visual-badge">Landing &amp; Ordering</div>
-                <div class="visual-graphic">
-                  <div class="graphic-icon">🍔</div>
-                  <div class="graphic-code-preview">
-                    <code>&lt;MenuSection filter="chef-choice" /&gt;</code>
+            <!-- Project 04: Student Management System -->
+            <article class="work-card reveal" data-category="backend" data-id="student">
+              <div class="work-thumb-wrapper">
+                <img src="img/project-04.png" alt="Student Management System - Student details, fees, attendance" class="work-thumb-img" loading="lazy" />
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-top">
+                  <div class="work-title-group">
+                    <span class="work-num">04</span>
+                    <h3 class="work-title">Student Management System</h3>
                   </div>
+                  <button class="work-live-btn project-modal-btn" type="button" data-project="student" aria-label="Live Demo for Student Management System">
+                    <span>Live Demo</span>
+                    <span class="work-arrow">➔</span>
+                  </button>
+                </div>
+                <p class="work-desc">
+                  Manage student details, fees, attendance, batch and student photos.
+                </p>
+                <div class="work-tech-tags">
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M11.9 0C5.8 0 6.2 2.6 6.2 2.6l.006 2.7h5.8v.8H3.9S0 5.8 0 11.9c0 6.1 3.4 5.9 3.4 5.9h2v-2.8s-.1-3.4 3.3-3.4h5.8s3.2 0 3.2-3.1V3.1S18.3 0 11.9 0zm-3.3 1.8a1 1 0 1 1 0 2.1 1 1 0 0 1 0-2.1z" fill="#38BDF8"/><path d="M12.1 24c6.1 0 5.7-2.6 5.7-2.6l-.006-2.7h-5.8v-.8h8.1s3.9.4 3.9-5.7c0-6.1-3.4-5.9-3.4-5.9h-2v2.8s.1 3.4-3.3 3.4H9.5s-3.2 0-3.2 3.1v5.3S5.7 24 12.1 24zm3.3-1.8a1 1 0 1 1 0-2.1 1 1 0 0 1 0 2.1z" fill="#F5B800"/></svg> Python</span>
+                  <span class="work-tech-pill"><span class="work-dj-badge">dj</span> Django</span>
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="#0EA5E9"><path d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5zm0 2c4.7 0 8 1.8 8 3s-3.3 3-8 3-8-1.8-8-3 3.3-3 8-3zm8 7.3c-.8 1.1-4 2.7-8 2.7s-7.2-1.6-8-2.7V9.5c1.9 1.4 5 2.2 8 2.2s6.1-.8 8-2.2v1.8zm0 5c-.8 1.1-4 2.7-8 2.7s-7.2-1.6-8-2.7v-1.8c1.9 1.4 5 2.2 8 2.2s6.1-.8 8-2.2v1.8z"/></svg> SQLite</span>
+                  <span class="work-tech-pill"><span class="work-bs-badge">B</span> Bootstrap</span>
                 </div>
               </div>
+            </article>
 
-              <div class="project-info">
-                <div class="project-chips">
-                  <span>Catalog</span>
-                  <span>UI/UX</span>
-                  <span>Mobile First</span>
-                </div>
-                <h3 class="project-title">Food Selling Website</h3>
-                <p class="project-summary">
-                  A visually rich culinary showcase designed to spotlight restaurant menus, vibrant dish photography, smooth checkout flows, and dietary tags.
-                </p>
-                <div class="project-footer">
-                  <span class="tech-stack-text">HTML5 • CSS3 • JavaScript • Responsive</span>
-                  <button class="project-modal-btn" type="button" aria-label="View Food Selling Website details" data-project="foodsite">
-                    <span>Details</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <!-- Project 05: Billing Project (Replaces Personal Portfolio per user request) -->
+            <article class="work-card reveal" data-category="pos" data-id="billing">
+              <div class="work-thumb-wrapper">
+                <img src="img/project-05.png" alt="Billing Project - SmartBilling POS &amp; Retail Suite" class="work-thumb-img" loading="lazy" />
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-top">
+                  <div class="work-title-group">
+                    <span class="work-num">05</span>
+                    <h3 class="work-title">Billing Project</h3>
+                  </div>
+                  <button class="work-live-btn project-modal-btn" type="button" data-project="billing" aria-label="Live Demo for Billing Project">
+                    <span>Live Demo</span>
+                    <span class="work-arrow">➔</span>
                   </button>
+                </div>
+                <p class="work-desc">
+                  Point of sale, product inventory, barcode billing, GST invoicing and daily sales reporting system.
+                </p>
+                <div class="work-tech-tags">
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M11.9 0C5.8 0 6.2 2.6 6.2 2.6l.006 2.7h5.8v.8H3.9S0 5.8 0 11.9c0 6.1 3.4 5.9 3.4 5.9h2v-2.8s-.1-3.4 3.3-3.4h5.8s3.2 0 3.2-3.1V3.1S18.3 0 11.9 0zm-3.3 1.8a1 1 0 1 1 0 2.1 1 1 0 0 1 0-2.1z" fill="#38BDF8"/><path d="M12.1 24c6.1 0 5.7-2.6 5.7-2.6l-.006-2.7h-5.8v-.8h8.1s3.9.4 3.9-5.7c0-6.1-3.4-5.9-3.4-5.9h-2v2.8s.1 3.4-3.3 3.4H9.5s-3.2 0-3.2 3.1v5.3S5.7 24 12.1 24zm3.3-1.8a1 1 0 1 1 0-2.1 1 1 0 0 1 0 2.1z" fill="#F5B800"/></svg> Python</span>
+                  <span class="work-tech-pill"><span class="work-dj-badge">dj</span> Django</span>
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="#0EA5E9"><path d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5zm0 2c4.7 0 8 1.8 8 3s-3.3 3-8 3-8-1.8-8-3 3.3-3 8-3zm8 7.3c-.8 1.1-4 2.7-8 2.7s-7.2-1.6-8-2.7V9.5c1.9 1.4 5 2.2 8 2.2s6.1-.8 8-2.2v1.8zm0 5c-.8 1.1-4 2.7-8 2.7s-7.2-1.6-8-2.7v-1.8c1.9 1.4 5 2.2 8 2.2s6.1-.8 8-2.2v1.8z"/></svg> SQLite</span>
+                  <span class="work-tech-pill"><span class="work-bs-badge">B</span> Bootstrap</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 06: Men's Wear Website -->
+            <article class="work-card reveal" data-category="frontend" data-id="menswear">
+              <div class="work-thumb-wrapper">
+                <img src="img/project-06.png" alt="Men's Wear Website - StyleHub Fashion" class="work-thumb-img" loading="lazy" />
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-top">
+                  <div class="work-title-group">
+                    <span class="work-num">06</span>
+                    <h3 class="work-title">Men's Wear Website</h3>
+                  </div>
+                  <button class="work-live-btn project-modal-btn" type="button" data-project="menswear" aria-label="Live Demo for Men's Wear Website">
+                    <span>Live Demo</span>
+                    <span class="work-arrow">➔</span>
+                  </button>
+                </div>
+                <p class="work-desc">
+                  A responsive men's fashion e-commerce website with product categories, cart and admin panel.
+                </p>
+                <div class="work-tech-tags">
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="-11.5 -10.23 23 20.46" fill="#61DAFB"><circle r="2.05"/><g stroke="#61DAFB" stroke-width="1.1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg> React</span>
+                  <span class="work-tech-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.4 1.4 2.8 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6-1.4-1.4-2.8-2.6-5.5-2.6zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.3 1.6 1.4 1.4 2.8 2.6 5.5 2.6 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.3-1.6-1.4-1.4-2.8-2.6-5.5-2.6z"/></svg> Tailwind CSS</span>
+                  <span class="work-tech-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="#E44D26"><path d="M4 2.5L5.6 20.5L12 22.3L18.4 20.5L20 2.5H4Z"/><path d="M12 4.1V20.6L16.9 19.2L18.3 4.1H12Z" fill="#F16529"/><path d="M12 7.7H8.5L8.7 10.2H12V12.7H8.9L9.3 16.3L12 17.1V19.4L7 18L6.4 10.2L6.1 5.3H12V7.7ZM12 12.7V10.2H15.3L15.6 7.7H12V5.3H17.8L17.5 9.1L17.2 12.7H12ZM15 14.8L14.7 17.1L12 17.9V19.4L16.9 18L17.1 14.8H15Z" fill="#FFF"/></svg> HTML</span>
+                  <span class="work-tech-pill work-pill-js"><span class="work-js-sq">JS</span> JS</span>
                 </div>
               </div>
             </article>
@@ -612,154 +706,86 @@
       </section>
 
       <!-- ======================================================================
-           SERVICES SECTION (What I Build)
+           SERVICES SECTION (Directly matching Reference Image: What I Can Do)
            ====================================================================== -->
       <section class="services-section section" id="services">
         <div class="container">
-          <div class="section-header reveal">
-            <p class="section-tag">Services</p>
-            <h2 class="section-title">What I can <span>build</span> for you</h2>
-            <p class="section-desc">Tailored digital solutions built from concept to deployment.</p>
+          <div class="section-header services-header reveal">
+            <div class="works-badge">
+              <span class="yellow-dash"></span>
+              <span class="works-tag-text">MY SERVICES</span>
+            </div>
+            <h2 class="section-title services-main-title">
+              What I <span class="text-gold">Can Do</span>
+            </h2>
           </div>
 
-          <div class="services-grid">
-            <article class="service-card reveal">
-              <div class="service-header">
-                <span class="service-icon">🎨</span>
-                <span class="service-number">01</span>
+          <div class="services-tiles-grid">
+            <!-- Service 1: Web Development -->
+            <article class="service-tile-card reveal">
+              <div class="service-yellow-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
               </div>
-              <h3>Web Design &amp; UI Architecture</h3>
-              <p>Modern, conversion-focused landing pages and web apps designed with a clean visual system, intuitive typography, and accessible design systems.</p>
-              <ul class="service-features">
-                <li>User Flow &amp; Wireframing</li>
-                <li>Design System &amp; Brand Styling</li>
-                <li>Conversion-Centered Layouts</li>
-              </ul>
-              <a href="#contact" class="service-cta">Discuss Web Design &rarr;</a>
+              <div class="service-tile-body">
+                <h3 class="service-tile-title">Web Development</h3>
+                <p class="service-tile-desc">Responsive and modern web applications.</p>
+              </div>
             </article>
 
-            <article class="service-card featured reveal">
-              <div class="service-header">
-                <span class="service-icon">⚡</span>
-                <span class="service-number">02</span>
+            <!-- Service 2: UI/UX Design -->
+            <article class="service-tile-card reveal">
+              <div class="service-yellow-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="13.5" cy="6.5" r=".5" fill="#000"></circle>
+                  <circle cx="17.5" cy="10.5" r=".5" fill="#000"></circle>
+                  <circle cx="8.5" cy="7.5" r=".5" fill="#000"></circle>
+                  <circle cx="6.5" cy="12.5" r=".5" fill="#000"></circle>
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.7-.8 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.2 0-.9.8-1.7 1.7-1.7H16c3.3 0 6-2.7 6-6 0-5.5-4.5-9.3-10-9.3z"></path>
+                </svg>
               </div>
-              <div class="service-featured-badge">Most Popular</div>
-              <h3>Frontend Web Development</h3>
-              <p>High-performance client-side development using semantic HTML5, modern modular CSS3, and dynamic JavaScript/React for fluid interactivity.</p>
-              <ul class="service-features">
-                <li>Semantic HTML5 &amp; Modern CSS Grid/Flexbox</li>
-                <li>JavaScript (ES6+) &amp; React Components</li>
-                <li>Cross-Browser &amp; Screen Compatibility</li>
-              </ul>
-              <a href="#contact" class="service-cta">Discuss Frontend Dev &rarr;</a>
+              <div class="service-tile-body">
+                <h3 class="service-tile-title">UI/UX Design</h3>
+                <p class="service-tile-desc">Clean and user-friendly interface design.</p>
+              </div>
             </article>
 
-            <article class="service-card reveal">
-              <div class="service-header">
-                <span class="service-icon">⚙️</span>
-                <span class="service-number">03</span>
+            <!-- Service 3: Backend Development -->
+            <article class="service-tile-card reveal">
+              <div class="service-yellow-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
               </div>
-              <h3>Backend &amp; API Integration</h3>
-              <p>Robust server-side logic and database architecture built with Python and Django to power scalable, secure web solutions.</p>
-              <ul class="service-features">
-                <li>Python &amp; Django Framework</li>
-                <li>RESTful API Endpoints &amp; JSON Handling</li>
-                <li>Relational Databases &amp; SQL Querying</li>
-              </ul>
-              <a href="#contact" class="service-cta">Discuss Backend &rarr;</a>
+              <div class="service-tile-body">
+                <h3 class="service-tile-title">Backend Development</h3>
+                <p class="service-tile-desc">Python, Django, REST API and database solutions.</p>
+              </div>
             </article>
 
-            <article class="service-card reveal">
-              <div class="service-header">
-                <span class="service-icon">🚀</span>
-                <span class="service-number">04</span>
+            <!-- Service 4: Website Maintenance -->
+            <article class="service-tile-card reveal">
+              <div class="service-yellow-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
               </div>
-              <h3>Performance &amp; Responsive UX</h3>
-              <p>Mobile-first optimization ensuring lighting-fast page loads, effortless touch navigation, and compliance with WCAG accessibility standards.</p>
-              <ul class="service-features">
-                <li>Lighthouse 95+ Performance Scores</li>
-                <li>Web Accessibility (a11y) Compliance</li>
-                <li>Zero-Lag Animations &amp; Transitions</li>
-              </ul>
-              <a href="#contact" class="service-cta">Discuss Optimization &rarr;</a>
+              <div class="service-tile-body">
+                <h3 class="service-tile-title">Website Maintenance</h3>
+                <p class="service-tile-desc">Bug fixes, updates and performance improvement.</p>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- ======================================================================
-           JOURNEY / TIMELINE SECTION
-           ====================================================================== -->
-      <section class="journey-section section" id="journey">
-        <div class="container">
-          <div class="section-header reveal">
-            <p class="section-tag">Learning Journey</p>
-            <h2 class="section-title">My <span>experience</span> &amp; milestones</h2>
-            <p class="section-desc">The continuous road of learning, building, and evolving as a software developer.</p>
-          </div>
 
-          <div class="timeline-wrapper reveal">
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <span class="marker-dot"></span>
-                <span class="marker-icon">🎓</span>
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">2021 — 2024</span>
-                <h3 class="timeline-heading">Computer Science Degree &amp; Foundation</h3>
-                <p>
-                  Mastered computing fundamentals, algorithmic logic, database schemas, object-oriented concepts, and core internet protocols. Formed the technical mindset for software development.
-                </p>
-                <div class="timeline-tags">
-                  <span>Data Structures</span>
-                  <span>Algorithms</span>
-                  <span>Database Systems</span>
-                  <span>Web Basics</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <span class="marker-dot"></span>
-                <span class="marker-icon">💻</span>
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">2024 — Present</span>
-                <h3 class="timeline-heading">Frontend &amp; Full Stack Deep Dive</h3>
-                <p>
-                  Specialized in modern client-side and full stack engineering: mastering semantic HTML5, sophisticated CSS3 styling, JavaScript ES6+, React, Python, and Django architectures.
-                </p>
-                <div class="timeline-tags">
-                  <span>React.js</span>
-                  <span>Python / Django</span>
-                  <span>Responsive UI/UX</span>
-                  <span>REST APIs</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker">
-                <span class="marker-dot"></span>
-                <span class="marker-icon">🚀</span>
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">Continuous Growth</span>
-                <h3 class="timeline-heading">Building Real-World Projects &amp; Digital Solutions</h3>
-                <p>
-                  Creating responsive web apps, interactive e-commerce portals, and dashboards with a laser focus on user experience, performance benchmarks, and clean codebase maintainability.
-                </p>
-                <div class="timeline-tags">
-                  <span>Production Ready</span>
-                  <span>Performance</span>
-                  <span>Clean Architecture</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- ======================================================================
            CONTACT SECTION (Instant WhatsApp Integration & Clipboard Copy)
@@ -896,36 +922,6 @@
       </div>
     </div>
 
-    <!-- ======================================================================
-         SITE FOOTER
-         ====================================================================== -->
-    <footer class="site-footer">
-      <div class="container footer-container">
-        <div class="footer-brand">
-          <a class="brand" href="#home">
-            <span class="brand-badge">M</span>
-            <span class="brand-text">Mathan<span class="brand-dot">.dev</span></span>
-          </a>
-          <p class="footer-tagline">
-            Building modern, high-performance web experiences with clean architecture and passion.
-          </p>
-        </div>
-
-        <div class="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; <span id="year">2026</span> Mathan M. All rights reserved.</p>
-          <p class="footer-sub">Crafted with modern HTML5, CSS3 &amp; JavaScript.</p>
-        </div>
-      </div>
-    </footer>
 
     <!-- ======================================================================
          FLOATING WIDGETS (WhatsApp & Back to Top)
@@ -945,23 +941,12 @@
       </svg>
       <span class="whatsapp-tooltip">Chat with Mathan</span>
     </a>
+    
 
-    <!-- Back to Top Button with Circular Progress -->
-    <button class="back-to-top" id="back-to-top" type="button" aria-label="Scroll back to top" title="Scroll back to top">
-      <svg class="progress-ring" width="46" height="46" viewBox="0 0 46 46">
-        <circle class="progress-ring-bg" cx="23" cy="23" r="20"></circle>
-        <circle class="progress-ring-circle" id="scroll-progress-circle" cx="23" cy="23" r="20"></circle>
-      </svg>
-      <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M18 15l-6-6-6 6"/>
-      </svg>
-    </button>
 
-    <!-- Global Toast Notification -->
-    <div class="toast" id="toast" role="alert" aria-live="assertive" hidden>
-      <span class="toast-dot"></span>
-      <span class="toast-message" id="toast-message">Notification</span>
-    </div>
+
+    
+
 
     <!-- Scripts (Root and fallback) -->
     <script src="main.js"></script>
